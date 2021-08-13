@@ -17,8 +17,19 @@
 
 
 var numbers = [51, 65, 84, 69, 56, 45,];
+let sum = 0;
 for (i = 0; i <= numbers.length; i++) {
-    const element = numbers[i];
-    console.log(element);
-
+    let element = numbers[i];
+    sum = sum + element;
 }
+// console.log(sum);
+
+function arrayTotal(numbers) {
+    let sum = 0;
+    for (i = 0; i <= numbers.length; i++);
+    const element = numbers[i];
+    sum = sum + element;
+    return sum;
+}
+const total = arrayTotal(78, 58, 89, 22, 35);
+console.log(total);
