@@ -8,12 +8,29 @@ nth = (n-1)th + (n - n2)th;
 ith = (i-1)th + (i - n2) th;
 */
 
-const fibo = [0, 1];
-for (let i = 2; i <= 10; i++) {
-    // nth = (n-1)th + (n-2)th 
-    // ith = (i-1)th + (i-2)th
-    fibo[i] = fibo[i - 1] + fibo[i - 2];
+// const fibo = [0, 1];
+// for (let i = 2; i <= 10; i++) {
+//     // nth = (n-1)th + (n-2)th 
+//     // ith = (i-1)th + (i-2)th
+//     fibo[i] = fibo[i - 1] + fibo[i - 2];
+// }
+// console.log(fibo);
+
+
+// const rimu = [0, 1];
+// for (let i = 2; i <= 6; i++) {
+//     rimu[i] = rimu[i - 1] + rimu[i - 2];
+// }
+// console.log(rimu);
+
+
+
+function fibonacchiSeries(num) {
+    const fibo = [0, 1];
+    for (let i = 2; i <= num; i++) {
+        fibo[i] = fibo[i - 1] + fibo[i - 2];
+    }
+    return fibo;
 }
-console.log(fibo);
-
-
+const fiboSeries = fibonacchiSeries([234]);
+console.log(fiboSeries);
