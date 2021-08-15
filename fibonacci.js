@@ -24,13 +24,36 @@ ith = (i-1)th + (i - n2) th;
 // console.log(rimu);
 
 
-
+/*
 function fibonacchiSeries(num) {
     const fibo = [0, 1];
+    if (typeof num != 'number') {
+        return 'please give a number'
+    }
+    if (num < 2) {
+        return 'please enter a positive number gtreater than 2'
+    }
     for (let i = 2; i <= num; i++) {
         fibo[i] = fibo[i - 1] + fibo[i - 2];
     }
     return fibo;
 }
-const fiboSeries = fibonacchiSeries([234]);
-console.log(fiboSeries);
+const fiboSeries = fibonacchiSeries(-21);
+console.log(fiboSeries); */
+
+
+function fibonacciSeries(num) {
+    let fibo = [0, 1];
+    if (typeof num != 'number') {
+        return 'wrong number'
+    }
+    if (num < 2) {
+        return 'enter getter number of 2'
+    }
+    for (let i = 2; i <= num; i++) {
+        fibo[i] = fibo[i - 1] + fibo[i - 2];
+    }
+    return fibo;
+}
+const myfibo = fibonacciSeries(-54);
+console.log(myfibo);
